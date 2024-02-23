@@ -44,6 +44,7 @@ nav .fa-solid {
 /* ---style hero section--- */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/hero-bkgd.svg) ;
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -90,11 +91,12 @@ nav .fa-solid {
 /* ---style SERVICES section--- */
 .services {
     background-image: url(./images/services-bkg.svg);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
 }
-.services .row {
+.row {
     padding: 100px;
     display: flex;
     flex-direction: column;
@@ -142,7 +144,44 @@ nav .fa-solid {
     font-weight: 100;
 }
 
-
+/* ---style GROOMERS section--- */
+.groomer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    justify-items: center;
+    height:650px;
+}
+.groomer-item {
+    background-color: antiquewhite;
+    border: 2px solid black;
+}
+#groomer1 {
+    background-image: url(./images/groomer1.svg);
+    background-size: auto;
+}
+#groomer2 {
+    background-image: url(./images/groomer2.svg);
+    background-size: cover;
+}
+#groomer3 {
+    background-image: url(./images/groomer3.svg);
+    background-size: cover;
+    
+}
+#groomer4 {
+    background-image: url(./images/groomer4.svg);
+    background-size: cover;
+}
+#groomer5 {
+    background-image: url(./images/groomer5.svg);
+    background-size: cover;
+}
+#groomer6 {
+    background-image: url(./images/groomer6.svg);
+    background-size: cover;
+}
 
 
 /* ---style FOOTER section--- */
