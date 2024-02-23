@@ -147,41 +147,21 @@ nav .fa-solid {
 /* ---style GROOMERS section--- */
 .groomer-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    height:650px;
 }
-.groomer-item {
-    background-color: antiquewhite;
-    border: 2px solid black;
+
+.groomer-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-#groomer1 {
-    background-image: url(./images/groomer1.svg);
-    background-size: auto;
+.groomer-bio {
+    display: none;
 }
-#groomer2 {
-    background-image: url(./images/groomer2.svg);
-    background-size: cover;
-}
-#groomer3 {
-    background-image: url(./images/groomer3.svg);
-    background-size: cover;
-    
-}
-#groomer4 {
-    background-image: url(./images/groomer4.svg);
-    background-size: cover;
-}
-#groomer5 {
-    background-image: url(./images/groomer5.svg);
-    background-size: cover;
-}
-#groomer6 {
-    background-image: url(./images/groomer6.svg);
-    background-size: cover;
-}
+
+
 
 
 /* ---style FOOTER section--- */
@@ -192,7 +172,7 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     padding: 20px 0;
 }
