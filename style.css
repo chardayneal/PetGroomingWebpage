@@ -115,7 +115,7 @@ nav .fa-solid {
 }
 .title-text img {
     width: 25%;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .services-row {
     margin-top: 50px;
@@ -145,6 +145,19 @@ nav .fa-solid {
 }
 
 /* ---style GROOMERS section--- */
+.title-text {
+    margin-bottom: 20px;
+}
+.title-text .dk-underline {
+    width: 5%;
+    margin-bottom: 20px;
+}
+.title-text span {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
 .groomer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -165,7 +178,8 @@ nav .fa-solid {
     /* display: none; */
 }
 .groomer-bio {
-    display: none;
+    visibility: hidden;
+    display: flex;
     flex-direction: column;
     z-index: 3;
     position: absolute;
@@ -184,8 +198,9 @@ nav .fa-solid {
 }
 
 .groomer-bio h3 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 20px;
+    font-family: 'Sofia Sans Extra Condensed';
 }
 .groomer-bio p {
     font-size: 15px;

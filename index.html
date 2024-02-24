@@ -15,9 +15,9 @@
                 <!-- <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> -->
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
                     <li><a href="#">OUR GROOMERS</a></li>
-                    <li><a href="#">SERVICE PACKAGES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -73,50 +73,50 @@
         <div class="row">
             <div class="title-text">
                 <h2>OUR GROOMERS</h2>
-                <img src="./images/underline.png"/>
+                <img class="dk-underline" src="./images/dk-underline.png"/>
                 <span>We trust our amazing groomers because of their passion</span>
             </div>
             <div class="groomer-container">
-                <div class="groomer-item">
+                <div class="groomer-item" id="groomer2" onmouseenter="hover(this)" onmouseleave="hideBio(this)">
                     <img src="./images/groomer2.png" alt="">
-                    <div class="groomer-bio">
+                    <div class="groomer-bio" id="groomer2-bio">
                         <h3>Josie</h3>
-                        <p>Lorem ipsum dolor sit amet, con sect etur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p>Lorem ipsum dolor sit amet, con sect etur adipiscing elit, sed do eius ut labore. </p>
                     </div>
                 </div>
-                <div class="groomer-item">
+                <div class="groomer-item" id="groomer3" onmouseenter="hover(this)" onmouseleave="hideBio(this)">
                     <img src="./images/groomer3.png" alt="">
-                    <div class="groomer-bio">
+                    <div class="groomer-bio" id="groomer3-bio">
                         <h3>Wallace</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>Lorem ipsum dolor sit amet, con sect etur adipiscing elit, sed do eius ut labore. </p>
                     </div>
                 </div>
-                <div class="groomer-item">
+                <div class="groomer-item" id="groomer4" onmouseenter="hover(this)" onmouseleave="hideBio(this)">
                     <img src="./images/groomer4.png" alt="">
-                    <div class="groomer-bio">
+                    <div class="groomer-bio" id="groomer4-bio">
                         <h3>Mattie</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>Lorem ipsum dolor sit amet, con sect etur adipiscing elit, sed do eius ut labore. </p>
                     </div>
                 </div>
-                <div class="groomer-item">
+                <div class="groomer-item" id="groomer1" onmouseenter="hover(this)" onmouseleave="hideBio(this)">
                     <img src="./images/groomer1.png" alt="">
-                    <div class="groomer-bio">
+                    <div class="groomer-bio" id="groomer1-bio">
                         <h3>Delores</h3>
-                        <p>Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>Lorem ipsum dolor sit amet, con sect etur adipiscing elit, sed do eius ut labore.</p>
                     </div>
                 </div>
-                <div class="groomer-item">
+                <div class="groomer-item" id="groomer5" onmouseenter="hover(this)" onmouseleave="hideBio(this)">
                     <img src="./images/groomer5.png" alt="">
-                    <div class="groomer-bio">
+                    <div class="groomer-bio" id="groomer5-bio">
                         <h3>Jana</h3>
-                        <p>Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>Lorem ipsum dolor sit amet, con sect etur adipiscing elit, sed do eius ut labore.</p>
                     </div>
                 </div>
-                <div class="groomer-item">
+                <div class="groomer-item" id="groomer6" onmouseenter="hover(this)" onmouseleave="hideBio(this)">
                     <img src="./images/groomer6.png" alt="">
-                    <div class="groomer-bio">
+                    <div class="groomer-bio" id="groomer6-bio">
                         <h3>Trenton</h3>
-                        <p>Lorem ipsum dolor sit amet, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>Lorem ipsum dolor sit amet, con sect etur adipiscing elit, sed do eius ut labore.</p>
                     </div>
                 </div>
             </div>
@@ -134,5 +134,21 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script>
+        function hover(element) {
+            const currentGroomer = element.getAttribute("id");
+            const groomerBio = document.getElementById(currentGroomer + "-bio");
+            groomerBio.style.visibility = "visible";
+        }
+
+        function hideBio(element) {
+            const currentGroomer = element.getAttribute("id");
+            const groomerBio = document.getElementById(currentGroomer + "-bio");
+            groomerBio.style.visibility = "hidden";
+        }
+    </script>
 </body>
 </html>
