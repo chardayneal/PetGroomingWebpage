@@ -145,28 +145,43 @@
                 <img class="dk-underline" src="./images/dk-underline.png"/>
             </div>
             <div class="contact-row">
-                <div class="contact-info">
-                    <span>1325 Howard Ave <br> Burlingame, CA 94010</span>
-                    <span>650-271-4282</span>
-                    <span>Monday - Sunday <br> 6AM to 11PM</span>
+                <div id="left-side">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.0769994502543!2d-122.3460144!3d37.5768045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9df038373647%3A0x90b1e3122741e48e!2s1325%20Howard%20Ave%2C%20Burlingame%2C%20CA%2094010!5e0!3m2!1sen!2sus!4v1708804371842!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact-info">
+                        <div class="info-row">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>1325 Howard Ave <br> Burlingame, CA 94010</p>
+                        </div>
+                        <div class="info-row">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>650-271-4282</p>
+                        </div>
+                        <div class="info-row">
+                            <i class="fa-solid fa-store"></i>
+                            <p>Monday - Sunday <br> 6AM to 11PM</p>
+                        </div>
+                        
+                        
+                    </div>
                 </div>
                 <div class="contact-form">
                     <form action="">
                         <div class="form-text">
                             <label for="pet-name">PET NAME</label>
-                            <input type="text" name="pet-name">
+                            <input type="text" id="pet-name" name="pet-name" required>
                         </div>
                         <div class="form-text">
                             <label for="pet">TYPE OF PET</label>
-                            <input type="text" name="pet">
+                            <input type="text" id="pet" name="pet" required>
                         </div>
                         <div class="form-text">
                             <label for="telephone">PHONE NUMBER</label>
-                            <input type="tel" name="telephone">
+                            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" >
                         </div>
                         <div class="form-text">
                             <label for="groomer-select">PREFERRED GROOMER</label>
                             <select id="groomer-select" name="groomer-select">
+                                <option value="NA">Select</option>
                                 <option value="josie">Josie</option>
                                 <option value="wallace">Wallace</option>
                                 <option value="mattie">Mattie</option>
@@ -177,7 +192,7 @@
                         </div>
                         <div class="form-text">
                             <label for="message">MESSAGE</label>
-                            <textarea name="message" id="message" rows="5"></textarea>
+                            <textarea name="message" id="message" rows="5" required></textarea>
                         </div>
                         <input type="submit" value="REQUEST" id="request">
                     </form>

@@ -13,6 +13,10 @@
 /* ---style header section--- */
 header {
     background-color: #2F2E2E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
 }
 
 .nav-links {
@@ -247,29 +251,52 @@ nav .fa-solid {
 
 /* ---style CONTACT US--- */
 .contact-row {
-    width: 70%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    border: 2px solid black;
+    justify-content: center;
+    gap: 50px;
 }
-.contact-info {
-    width: 40%;
-    border: 2px solid black;
+#left-side {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#left-side iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: transparent
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+.info-row {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
     align-items: center;
+    margin-bottom: 30px;
+   
 }
-
-.contact-info span {
-    margin-bottom: 35px;
-    font-weight: 300;
+.info-row i {
+    font-size: 30px;
+    color: #2F2E2E;
+    width: 35px;
     text-align: center;
+    margin-right: 10px;
 }
+ .contact-info p {
+    width: 200px;
+    font-weight: 300;
+} 
 .contact-form {
-    width: 60%;
-    border: 2px black solid;
-    padding: 0 15px;
+    width: 50%;
+    padding: 0 30px;
     box-sizing: border-box;
 }
 .form-text {
