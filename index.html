@@ -15,10 +15,10 @@
                 <!-- <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> -->
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">OUR GROOMERS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#groomers">OUR GROOMERS</a></li>
+                    <li><a href="#about-us">ABOUT US</a></li>
+                    <li><a href="#contact-us">CONTACT</a></li>
                 </ul>
             </div>
             <!-- <i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
@@ -42,7 +42,7 @@
     
 
     <!-- -----SERVICES SECTION------ -->
-    <section class="services">
+    <section id="services">
         <div class="row">
             <div class="title-text">
                 <h2>SERVICES</h2>
@@ -69,7 +69,7 @@
     </section>
 
     <!-- ------OUR GROOMERS SECTION----- -->
-    <section class="groomers">
+    <section id="groomers">
         <div class="row">
             <div class="title-text">
                 <h2>OUR GROOMERS</h2>
@@ -124,7 +124,7 @@
     </section>
 
     <!-- -----ABOUT US SECTION----- -->
-    <section class="about-us">
+    <section id="about-us">
         <div class="row">
             <div class="title-text">
                 <h2>ABOUT US</h2>
@@ -137,10 +137,58 @@
         </div>
     </section>
 
+    <!-- -----CONTACT US SECTION----- -->
+    <section id="contact-us">
+        <div class="row">
+            <div class="title-text">
+                <h2>REQUEST APPOINTMENT</h2>
+                <img class="dk-underline" src="./images/dk-underline.png"/>
+            </div>
+            <div class="contact-row">
+                <div class="contact-info">
+                    <span>1325 Howard Ave <br> Burlingame, CA 94010</span>
+                    <span>650-271-4282</span>
+                    <span>Monday - Sunday <br> 6AM to 11PM</span>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <div class="form-text">
+                            <label for="pet-name">PET NAME</label>
+                            <input type="text" name="pet-name">
+                        </div>
+                        <div class="form-text">
+                            <label for="pet">TYPE OF PET</label>
+                            <input type="text" name="pet">
+                        </div>
+                        <div class="form-text">
+                            <label for="telephone">PHONE NUMBER</label>
+                            <input type="tel" name="telephone">
+                        </div>
+                        <div class="form-text">
+                            <label for="groomer-select">PREFERRED GROOMER</label>
+                            <select id="groomer-select" name="groomer-select">
+                                <option value="josie">Josie</option>
+                                <option value="wallace">Wallace</option>
+                                <option value="mattie">Mattie</option>
+                                <option value="delores">Delores</option>
+                                <option value="jana">Jana</option>
+                                <option value="trenton">Trenton</option>
+                            </select>
+                        </div>
+                        <div class="form-text">
+                            <label for="message">MESSAGE</label>
+                            <textarea name="message" id="message" rows="5"></textarea>
+                        </div>
+                        <input type="submit" value="REQUEST" id="request">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-info">
-            <span>Made by <i class="fa-regular fa-copyright"></i> ChardayDevs</span>
+            <span><i class="fa-regular fa-copyright"></i>2024 by ChardayDevs</span>
             <div class="footer-socials">
                 <a href="https://www.facebook.com/charday.l.neal"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://github.com/chardayneal"><i class="fa-brands fa-github"></i></a>
