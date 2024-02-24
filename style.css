@@ -206,7 +206,6 @@ nav .fa-solid {
     font-size: 15px;
 }
 
-
 @media(max-width:900px) {
     .groomer-container {
         grid-template-columns: repeat(2,1fr);
@@ -219,6 +218,33 @@ nav .fa-solid {
         grid-template-rows: repeat(6, 1fr);
     }
 }
+
+/* ---style ABOUT US section--- */
+.about-us {
+    background-image: url(./images/about-bkg.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.about-us .row {
+    width: 45%;
+    margin: auto;
+    background-color: white;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+.about-text p {
+    font-weight: 200;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
 
 
 
