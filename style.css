@@ -45,6 +45,12 @@ nav .fa-solid {
     display: none;
 }
 
+@media(max-width: 700px) {
+    header {
+        position: relative;
+    }
+}
+
 /* ---style hero section--- */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/hero-bkgd.svg) ;
@@ -92,6 +98,32 @@ nav .fa-solid {
     font-size: 45px;
 }
 
+@media(max-width:700px) {
+    .hero {
+        height: 100%;
+        background-attachment: scroll;
+    }
+    .hero-text {
+        padding: 100px 5px 50px 5px;
+    }
+    .hero-text img {
+        display: none;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .hero-text h2 {
+        font-size: 15px;
+    }
+    .socials {
+        padding-bottom: 50px;
+    }
+    .socials .fa-brands {
+        font-size: 15px;
+    }
+}
+
 /* ---style SERVICES section--- */
 #services {
     background-image: url(./images/services-bkg.svg);
@@ -114,8 +146,6 @@ nav .fa-solid {
 .title-text h2{
     font-size: 35px;
     font-weight: 200;
-    
-
 }
 .title-text img {
     width: 25%;
@@ -148,6 +178,40 @@ nav .fa-solid {
     font-weight: 100;
 }
 
+@media(max-width: 700px) {
+    #services {
+        background-attachment: fixed;
+        background-size: inherit;
+        height: 100%;
+    }
+    #services .row {
+        padding: 30px;
+    }
+    .title-text h2 {
+        font-size: 20px;
+    }
+    .services-row {
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .service-col {
+        width: 80%;
+        margin-bottom: 35px;
+    }
+    .service-col img {
+        width: 75px;
+    }
+    .service-col h3 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .service-col span {
+        font-size: 15px;
+    }
+
+}
+
 /* ---style GROOMERS section--- */
 .title-text {
     margin-bottom: 20px;
@@ -160,7 +224,6 @@ nav .fa-solid {
     font-size: 25px;
     font-weight: 200;
 }
-
 
 .groomer-container {
     display: grid;
@@ -217,6 +280,13 @@ nav .fa-solid {
     }
 }
 @media(max-width:700px) {
+    #groomers .row {
+        padding: 100px 50px;
+    }
+    .title-text span {
+        font-size: 15px;
+        text-align: center;
+    }
     .groomer-container {
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -245,8 +315,20 @@ nav .fa-solid {
 }
 .about-text p {
     font-weight: 200;
-    letter-spacing: .1rem;
+    letter-spacing: .02rem;
     text-align: center;
+}
+
+@media(max-width:700px) {
+    #about-us .row {
+        padding: 20px 10px;
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    .about-text p{
+        font-size: 15px;
+    }
 }
 
 /* ---style CONTACT US--- */
@@ -340,6 +422,26 @@ form #request {
     font-size: 18px;
     font-weight: 200;
     cursor: pointer;
+}
+
+@media(max-width:700px) {
+    #contact-us .row {
+        padding: 50px 20px;
+    }
+    .contact-row {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .form-text label {
+        font-size: 15px;
+    }
+    #left-side {
+        width: 100%;
+        align-items: center;
+    }
 }
 
 
