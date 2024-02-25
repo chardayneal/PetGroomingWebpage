@@ -12,7 +12,7 @@
     <header>
         <nav id="navLinks">
             <div class="nav-links">
-                <!-- <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> -->
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#services">SERVICES</a></li>
@@ -21,8 +21,8 @@
                     <li><a href="#contact-us">CONTACT</a></li>
                 </ul>
             </div>
-            <!-- <i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
         </nav>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </header>
 
     <!-- ------HERO SECTION----- -->
@@ -215,6 +215,16 @@
 
 
     <script>
+        var navHeader = document.getElementById("navLinks");
+
+        function hideMenu() {
+            navHeader.style.left = "-200px";
+        }
+        function showMenu() {
+            navHeader.style.left = "0";
+        }
+
+
         function hover(element) {
             const currentGroomer = element.getAttribute("id");
             const groomerBio = document.getElementById(currentGroomer + "-bio");

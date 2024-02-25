@@ -11,7 +11,10 @@
 }
 
 /* ---style header section--- */
-header {
+/* header {
+    
+} */
+nav {
     background-color: #2F2E2E;
     position: fixed;
     top: 0;
@@ -43,11 +46,39 @@ header {
 
 nav .fa-solid {
     display: none;
+    color: white;
 }
 
 @media(max-width: 700px) {
     header {
-        position: relative;
+        background-color: #2F2E2E;
+    }
+    nav {
+        display: block;
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -200px;
+    }
+    .nav-links ul {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .nav-links ul li {
+        display: block;
+    } 
+    .nav-links .fa-solid {
+        display: block;
+        float: right;
+        margin-bottom: 10px;
+    }
+    header .fa-bars {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        color: white;
+        font-size: 25px;
     }
 }
 
@@ -366,7 +397,7 @@ nav .fa-solid {
    
 }
 .info-row i {
-    font-size: 30px;
+    font-size: 25px;
     color: #2F2E2E;
     width: 35px;
     text-align: center;
