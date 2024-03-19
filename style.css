@@ -211,7 +211,7 @@ nav .fa-solid {
 
 @media(max-width: 700px) {
     #services {
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-size: inherit;
         height: 100%;
     }
